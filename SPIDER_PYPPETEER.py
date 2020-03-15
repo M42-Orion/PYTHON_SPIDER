@@ -16,7 +16,7 @@ async def jingdong():
     await page.keyboard.press('Enter')
 
     await page.waitForSelector('ul.gl-warp.clearfix>li')
-    #list = await page.querySelectorAll('ul.gl-warp.clearfix>li') 
+    #list = await page.querySelectorAll('ul.gl-warp.clearfix>li')
     list = await page.JJeval('ul.gl-warp.clearfix>li', '(nodes => nodes.map(n => n.innerText))')#使用puppeteer中的方法提取相应的文字内容
 
     for i in list:
