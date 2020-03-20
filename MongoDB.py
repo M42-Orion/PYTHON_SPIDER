@@ -7,7 +7,7 @@ from urllib import parse
 '''
 # 转义用户名和密码
 user = parse.quote_plus("dbuser")
-passwd = parse.quote_plus("MongoDBmima12!")
+passwd = parse.quote_plus("!")
 # client = pymongo.MongoClient("mongodb+srv://{}:{}@cluster0-vf6jv.mongodb.net/test?retryWrites=true&w=majority".format(user,passwd))
 client = pymongo.MongoClient("mongodb+srv://dbuser:{}@xiaobai-vf6jv.gcp.mongodb.net/test?retryWrites=true&w=majority".format(passwd))
 
