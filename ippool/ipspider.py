@@ -35,8 +35,11 @@ def scrapy(url):
         List = ip.find_all('td')
         iptest(List[0].string,List[1].string)
 
-if __name__ == "__main__":
+def mian():
     pool = Pool()#创建进程池
     pool.map(scrapy,['http://www.66ip.cn/{}.html'.format(i) for i in range(1,20)])
     pool.close() # 将进程池关闭，不再接受新的进程
     pool.join() # 主进程阻塞，只有池中所有进程都完毕了才会通过
+
+# if __name__ == "__main__":
+#     main()

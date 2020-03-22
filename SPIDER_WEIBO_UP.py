@@ -42,5 +42,5 @@ def loginWeibo(username, password,url='https://passport.weibo.cn/signin/login',s
     return cookie
 
 if __name__ == '__main__':    
-    cookie=loginWeibo('b1821199691@163.com','cptbtptp12')
+    cookie=loginWeibo('b1821199691@163.com','')
     print(cookie)

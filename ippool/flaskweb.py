@@ -3,6 +3,8 @@ import pymongo
 import json
 import random
 
+import ipspider as ips
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -13,7 +15,7 @@ def hello_world():
     a = random.sample([i for i in mycol.find()],1)[0]
     del a['_id']
     return jsonify(a)
-    
 
 if __name__ == '__main__':
+    ips.mian()
     app.run()
