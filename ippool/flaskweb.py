@@ -7,7 +7,7 @@ import ipspider as ips
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('')
 def hello_world():
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
     mydb = myclient["ippool"]
@@ -17,5 +17,5 @@ def hello_world():
     return jsonify(a)
 
 if __name__ == '__main__':
-    ips.mian()
+    # ips.mian()
     app.run()
