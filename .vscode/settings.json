@@ -1,3 +1,21 @@
 {
-    "python.pythonPath": "test\\Scripts\\python.exe"
+    "python.pythonPath": "test\\Scripts\\python.exe",
+    "database.connections": [
+        {
+            "type": "mysql",
+            "name": "root@localhost (MySql)",
+            "host": "localhost:3306",
+            "username": "root",
+            "database": "test",
+            "password": "123"
+        },
+        {
+            "type": "mysql",
+            "name": "root@localhost (MySql)",
+            "host": "localhost:3306",
+            "username": "root",
+            "database": "test",
+            "password": "123"
+        }
+    ]
 }
